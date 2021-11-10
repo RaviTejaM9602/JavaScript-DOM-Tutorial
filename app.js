@@ -32,3 +32,12 @@ list.addEventListener('click', (e) => {
 
   });
 });
+
+
+
+const link = document.querySelector('#page-banner a');
+
+link.addEventListener('click', function(e){
+  e.preventDefault();
+  console.log('Navigation to', e.target.textContent, 'was prevented');
+});
