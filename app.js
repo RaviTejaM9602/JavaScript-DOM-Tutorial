@@ -1,58 +1,15 @@
-var banner = document.getElementById('page-banner');
+const banner = document.querySelector('#page-banner');
+console.log(banner.nodeType);
+console.log(banner.nodeName);
+console.log(banner.hasChildNode);
 
-var bookList = document.getElementById('book-list');
+const cloneBanner = banner.cloneNode(true);
+console.log(cloneBanner);
 
+const bookList = document.querySelector('#book-list');
+console.log(bookList.parentNode);
+console.log(bookList.parentElement);
+console.log(bookList.Children);
 
-
-
-// var titles = document.getElementsByClassName('title');
-// console.log(titles);
-
-
-// var lis = document.getElementsByTagName('li');
-// console.log(lis);
-
-
-// for(i=0;i<titles.length;i++){
-//   console.log(titles[i])
-// }
-
-// console.log(Array.isArray(titles));
-// console.log(Array.isArray(Array.from(titles)));
-
-// Array.from(titles).forEach(function(item){
-//   console.log(item)
-// });
-
-
-// var books = document.querySelector('#book-list li:nth-child(2)');
-// console.log(books);
-// var booky = document.querySelector('#book-list li .name');
-// console.log(booky);
-// booky = document.querySelectorAll('#book-list li .name');
-// console.log(booky);
-
-
-// Array.from(booky).forEach(function(book){
-//   console.log(book)
-// });
-
-
-// var books = document.querySelectorAll('#book-list li .name');
-
-
-// Array.from(books).forEach(function(book){
-//   console.log(book.textContent);
-// });
-
-
-var books = document.querySelectorAll('#book-list');
-Array.from(books).forEach(function(book){
- book.textContent += '(Book title)';  
-});
-
-
-const bookList1 = document.querySelector('#book-list');
-console.log(bookList1.innerHtml = '<h2>Hello Sai</h2>');
-bookList1.innerHtml = '<p>Hello Sai</p>';
+console.log(bookList.childNode);
 
