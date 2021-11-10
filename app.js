@@ -13,3 +13,6 @@ console.log(bookList.Children);
 
 console.log(bookList.childNode);
 
+console.log(bookList.nextSibling);
+console.log(bookList.nextElementSibling);
+
