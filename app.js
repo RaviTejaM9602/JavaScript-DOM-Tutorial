@@ -25,14 +25,34 @@ var bookList = document.getElementById('book-list');
 // });
 
 
-var books = document.querySelector('#book-list li:nth-child(2)');
-console.log(books);
-var booky = document.querySelector('#book-list li .name');
-console.log(booky);
-booky = document.querySelectorAll('#book-list li .name');
-console.log(booky);
+// var books = document.querySelector('#book-list li:nth-child(2)');
+// console.log(books);
+// var booky = document.querySelector('#book-list li .name');
+// console.log(booky);
+// booky = document.querySelectorAll('#book-list li .name');
+// console.log(booky);
 
 
-Array.from(booky).forEach(function(book){
-  console.log(book)
+// Array.from(booky).forEach(function(book){
+//   console.log(book)
+// });
+
+
+// var books = document.querySelectorAll('#book-list li .name');
+
+
+// Array.from(books).forEach(function(book){
+//   console.log(book.textContent);
+// });
+
+
+var books = document.querySelectorAll('#book-list');
+Array.from(books).forEach(function(book){
+ book.textContent += '(Book title)';  
 });
+
+
+const bookList1 = document.querySelector('#book-list');
+console.log(bookList1.innerHtml = '<h2>Hello Sai</h2>');
+bookList1.innerHtml = '<p>Hello Sai</p>';
+
